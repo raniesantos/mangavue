@@ -42,13 +42,15 @@ export default {
                     else alert('No previous chapter');
                     break;
                 case 'BracketRight':
-                    if (this.currentChapter < this.chapters.slice().pop()) this.currentChapter++;
+                    if (this.currentChapter < this.chapters.slice(-1)[0]) this.currentChapter++;
                     else alert('No next chapter');
                     break;
                 case 'NumpadSubtract':
+                case 'Minus':
                     if (this.zoom > 6) this.zoom--;
                     break;
                 case 'NumpadAdd':
+                case 'Equal':
                     if (this.zoom < 10) this.zoom++;
                     break;
                 }
