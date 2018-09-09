@@ -5,6 +5,8 @@
             :current-chapter.sync="currentChapter"
         />
 
+        <div id="scroll-target" style="height: 5px;"/>
+
         <page :chapter="currentChapter" :page="page" :zoom="zoom"/>
 
         <page-number>{{ page }}</page-number>
@@ -68,7 +70,7 @@ export default {
     watch: {
         page () {
             this.updateTitle();
-            window.scrollTo(0, 0);
+            document.getElementById('scroll-target').scrollIntoView();
             this.$http.get(this.$_pagePath(this.currentChapter, this.page + 1))
                 .then(() => (this.isLastPage = false))
                 .catch(() => (this.isLastPage = true));

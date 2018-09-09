@@ -29,7 +29,7 @@ export default {
         background: #000;
         padding: 5px;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     a {
