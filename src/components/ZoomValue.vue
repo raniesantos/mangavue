@@ -15,7 +15,7 @@
         background: rgba(102, 0, 0, 0.8);
         position: fixed;
         bottom: 0;
-        right: 50%;
-        transform: translateX(-10%);
+        left: 50%;
+        transform: translateX(10%);
     }
 </style>

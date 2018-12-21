@@ -9,7 +9,8 @@
 
         <page :chapter="currentChapter" :page="page" :zoom="zoom"/>
 
-        <page-number>{{ page }}</page-number>
+        <page-number>P{{ page }}</page-number>
+        <zoom-value>{{ zoom }}0%</zoom-value>
     </div>
 </template>
 

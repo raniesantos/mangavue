@@ -7,6 +7,7 @@ Vue.config.productionTip = false;
 Vue.component('chapter-list', require('./components/ChapterList').default);
 Vue.component('page', require('./components/Page').default);
 Vue.component('page-number', require('./components/PageNumber').default);
+Vue.component('zoom-value', require('./components/ZoomValue').default);
 
 Vue.prototype.$http = axios;
 
