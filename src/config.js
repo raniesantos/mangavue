@@ -1,4 +1,4 @@
 export default {
-    start: 334,
-    end: 342
+    start: 343,
+    end: 350
 };

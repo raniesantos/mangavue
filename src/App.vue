@@ -38,7 +38,7 @@ export default {
                     break;
                 case 'ArrowRight':
                     if (!this.isLastPage) this.page++;
-                    else alert('No next page');
+                    else window.bus.$emit('handle-keydown', 'BracketRight');
                     break;
                 case 'BracketLeft':
                     if (this.currentChapter > this.chapters[0]) this.currentChapter--;

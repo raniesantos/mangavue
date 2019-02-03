@@ -15,7 +15,7 @@ Vue.mixin({
     methods: {
         $_pagePath (chapter, page) {
             const paddedPage = String(page).padStart(3, '0');
-            return `images/chapter-${chapter}/${paddedPage}.jpg`;
+            return `images/chapter-${chapter}/${paddedPage}.png`;
         }
     }
 });
